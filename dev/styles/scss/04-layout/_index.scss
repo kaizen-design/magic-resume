@@ -1,0 +1,105 @@
+//
+// Layout
+//
+// Larger layout items that contain base elements are styled here. BEM is a good
+// example.
+//
+
+@import 'buttons';
+@import 'header';
+@import 'footer';
+
+.container-fluid {
+  padding: 0 15px;
+}
+
+.container {
+  padding: 0 15px;
+  margin: 0 auto;
+  width: calc(100% - 30px);
+  max-width: 1400px;
+  @media (max-width: 1399px) {
+    max-width: 1180px;
+  }
+}
+
+.img-fluid {
+  display: block;
+  max-width: 100%;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-column {
+  flex-direction: column;
+}
+
+.items-center {
+  align-items: center;
+}
+
+.justify-between {
+  justify-content: space-between;
+}
+
+.relative {
+  position: relative;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.grid-lg-10 {
+  @media (min-width: 769px) {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);  
+    grid-column-gap: 30px;
+    & > .col-lg-2 {
+      grid-column: span 2;
+    }
+    & > .col-lg-5 {
+      grid-column: span 5;
+    } 
+  }   
+}
+
+.grid-4 {
+  @media (max-width: 768px) {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);  
+    grid-column-gap: 30px;
+    & > .col-2 {
+      grid-column: span 2;
+    }
+    & > .col-4 {
+      grid-column: span 4;
+    }
+  }  
+}
+
+.order-lg-first {
+  @media (min-width: 769px) {
+    order: -1;
+  }
+}
+
+.z-10 {
+  z-index: 10;
+}
+
+.text-center {
+  text-align: center;
+} 
+
+.text-lg-left {
+  @media (min-width: 769px) {
+    text-align: left;
+  }
+}
+
+.h-100 {
+  height: 100%;
+}

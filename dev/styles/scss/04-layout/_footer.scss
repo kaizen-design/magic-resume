@@ -1,0 +1,39 @@
+.footer {
+  background: #2B2B2B;
+  padding: 64px 0;
+  color: $white;
+  @media (max-width: 768px) {
+    padding: 24px 0 48px;
+    .col-2 {
+      padding: 24px 0;
+    }
+  }  
+  .brand {
+    margin-bottom: 10px;
+    display: inline-block;
+    @media (max-width: 768px) {
+      margin-bottom: 56px;
+      margin-top: 32px;
+    }
+  }
+  h3 {
+    font-weight: 700;
+    margin-bottom: 24px;
+  }  
+  a {
+    color: $white;
+    text-decoration: none;
+    opacity: 1;
+    &:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.footer-menu {
+  li {
+    &:not(:last-child) {
+      margin-bottom: 1rem;
+    }    
+  }
+}

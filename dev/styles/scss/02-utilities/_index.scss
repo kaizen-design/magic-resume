@@ -1,0 +1,22 @@
+//
+// Utilities
+//
+// Import the basic utilities that other components in your project will require and
+// that don’t change. For example, color palettes, global variables, mixins, etc.
+//
+
+$white: #fff;
+$black: #000;
+$blue: #0089D6;
+
+$transition: all 0.3s ease;
+
+@mixin horizontal-align($left: 50%, $translateX: 50%) {
+  position: absolute;
+  left: $left;
+  -webkit-transform: translateX(-$translateX);
+  -moz-transform: translateX(-$translateX);
+  -ms-transform: translateX(-$translateX);
+  -o-transform: translateX(-$translateX);
+  transform: translateX(-$translateX);
+}
