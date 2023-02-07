@@ -1,3 +1,7 @@
+var ghpages = require('gh-pages');
+
+ghpages.publish('prod', function(err) {});
+
 const { src, dest, series, watch } = require(`gulp`),
     CSSLinter = require(`gulp-stylelint`),
     del = require(`del`),
