@@ -3,6 +3,7 @@
   "version": "4.0.2",
   "description": "An automation template for HTML, CSS, Sass, and JavaScript.",
   "main": "gulpfile.js",
+  "site_url": "https://kaizen-design.github.io/magic-resume/",
   "scripts": {
     "deploy": "gh-pages -d prod",
     "test": "echo \"Error: no test specified\" && exit 1"
