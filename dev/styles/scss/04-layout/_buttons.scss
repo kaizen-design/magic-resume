@@ -23,8 +23,7 @@
     color: $white;
     background: linear-gradient(90deg, #00BAAF 0.41%, #0089D6 100.58%);
     opacity: 1;
-    &:hover, &:focus {
-      //background: linear-gradient(90deg, #0089D6 0.41%, #00BAAF 100.58%);
+    &:hover, &:focus {      
       opacity: 0.8;
     }
   }
@@ -35,8 +34,8 @@
     outline-offset: -2px;
     opacity: 1;
     &:hover, &:focus {
-      //background: $black;
-      //color: $white;
+      background: $black;
+      color: $white;
       opacity: 0.8;
     }
   }

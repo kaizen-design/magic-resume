@@ -102,7 +102,7 @@ let compileCSSForProd = () => {
 };
 
 let transpileJSForProd = () => {
-    return src(`dev/scripts/*.js`)
+    return src(`dev/scripts/*.js`)        
         .pipe(babel())
         .pipe(jsCompressor())
         .pipe(dest(`prod/scripts`));
